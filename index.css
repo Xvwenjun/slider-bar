@@ -1,0 +1,73 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+ul li,
+ol li {
+    list-style: none;
+}
+
+.focus {
+    /* overflow: hidden; */
+    height: 455px;
+    position: relative;
+    width: 721px;
+    margin: 100px auto;
+}
+
+.focus ul {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 500%;
+}
+
+.focus ul li {
+    float: left;
+}
+
+.circle {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .7);
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 30px;
+    height: 12px;
+    left: 50%;
+}
+
+.circle li {
+    float: left;
+    margin: 1px 3px;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+}
+
+.current {
+    background-color: white;
+}
+
+.arr-left,
+.arr-right {
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, .7);
+    color: seashell;
+    display: none;
+}
+
+.arr-right {
+    right: 0;
+}
